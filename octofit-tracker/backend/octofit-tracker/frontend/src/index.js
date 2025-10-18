@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom/client';
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 // Set REACT_APP_CODESPACE_URL from environment or fallback to localhost
 if (!process.env.REACT_APP_CODESPACE_URL) {
@@ -14,6 +12,8 @@ if (!process.env.REACT_APP_CODESPACE_URL) {
     ? `https://${codespaceName}-8000.app.github.dev`
     : 'http://localhost:8000';
 }
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
